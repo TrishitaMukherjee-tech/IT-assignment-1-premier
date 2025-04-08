@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monument Extended'), 
+         url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Monument Extended'), 
+         url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff) format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* overflow-x: hidden; */
+}
+body #main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+#main #nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-top: 1vw; /* Add space above content */
+    padding-bottom: 1.5vw; /* Add space below content */
+    margin-top:2.5vw;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    
+}
+#nav h1{
+    font-family:monument extended;
+    font-size: 35px;
+    letter-spacing: -1 ;
+    width: 8%;
+    position: relative;
+    color: black;
+    top:5px;
+    left: 20px;
+    
+}
+
+#nav h1::after{
+    content: "©";
+    font-size: 19px;
+    position: absolute;
+    font-family: 'gilroy';
+    font-weight: 70%;
+    top: 4px;
+    color: black;
+    left: 168%;
+    
+   
+}
+
+#nav h1::before{
+    content: "model management";
+    font-size: 13px;
+    position: absolute;
+    font-family: 'gilroy';
+    top: 40px;
+    left: 75%;
+    width: 150px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: black;
+}
+#nav h2 {
+    font-family: 'arial';
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -1 ;
+    width: 15%;
+    position: relative;
+    color: black;
+    top:5px;
+    left: 100px;
+    border-right: 2px solid black;
+    height: 3vh;
+    cursor: pointer;
+}
+
+#nav h2:nth-last-child(1){
+    width: 20%;
+}
+#nav h2:nth-last-child(2){
+    width: 20%;
+}
+#nav h2:nth-last-child(4){
+    width: 7%;
+}
+#main #center{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    padding: 3.5vw;
+    overflow-x: hidden;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+#center #content{
+    width: 100%;
+    height: 100%;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    
+    }
+
+#center #text-center{
+    position: absolute;
+    height: 45%;
+    width: 90%;
+    bottom: 10%;
+    color: black;
+    top: 55%;
+    left: 10%;
+    z-index: 2;
+}
+#text-center #top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#top h4{
+    font-family: "monument extended";
+    font-size: 45px;
+    letter-spacing: 1.3px;
+    color: white;
+    /*margin-top: -350px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    padding-right: 30px;
+    z-index: 3;
+    position: relative ;*/
+    margin: 0;
+    padding: 0;
+
+} 
+#top #top-left {
+   
+    align-items: center;
+    position: absolute;
+    height: 45%;
+   /* width: 15%;*/
+    bottom: 10%;
+    color: white;
+    top: 55%;
+    left: 10%;
+    z-index: 2;
+}
+#top-left h3 {
+    font-family: "arial";
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1.3px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    margin-top: -140px;
+    margin-left: 1030px;
+    margin-bottom: 100px;
+    padding: 25px 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 3;
+    position: relative ;
+}
+#text-center #bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    color: white;
+    /*top: 80%;*/
+    bottom: 30%;
+    left:0%;
+    z-index: 3;
+    width: 90% ;
+     
+}
+#bottom h5 {
+    /*position: absolute;*/
+    font-family: "arial";
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: normal;
+    letter-spacing: 1.3px;
+    color: white;
+    border-top: 2px solid white;
+    width: 170%;
+    flex-grow: 1;
+    padding-right: 10px;
+    /*z-index: 3;*/
+    margin: 0;
+}
+#bottom h6 {
+    font-family: "arial";
+    font-size: 50px; /* Match size with Explore */
+    font-weight: 70 ;
+    color: white;
+   /* z-index: 3;
+    margin-left: 1300px; /* Move arrow further to the right */
+    /*display: flex;*/
+    margin: 0;
+    padding: 0 ;
+}
+#main #scroll {
+    width: 100%;
+    height: 200px;
+    margin-top: 3vw;
+    overflow: hidden;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: scrollAnimation 10s linear infinite  ;
+   
+}
+@keyframes scrollAnimation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* #images #part {
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}*/
+
+#part img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+} 
+#part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@keyframes myanimation {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#images::-webkit-scrollbar{
+    display: none;
+}
+
+#alphabets h2 {
+    text-decoration: underline ;
+    font-family: arial;
+    font-style: italic;
+    font-weight: normal;
+
+} 
+#alphabets  {
+    height: 70px ;
+    width: 100%;
+    background-color: rgb(218, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin-top: 50px;
+    
+
+}
+#alphabets h3 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+#page-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* #page-1{
+    height: 100%;
+    width: 100%;
+    /* padding: 3.5vw; */
+    /* display: flex; */
+    /*gap: 40px;*/
+    /* padding-bottom: 15px; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin: 40px; */
+    /* overflow-x: hidden; */
+    
+/* } */ 
+#page-1 {
+    display: flex;
+    padding: 50px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Left side */
+#page-1-left {
+    flex: 1;
+    padding-left: 45px;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#page-1-left img {
+    width: 550px;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page-1-left p {
+    font-family:"monument extended" ;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 22px;
+    letter-spacing: 1.2px;
+}
+
+/* Right side */
+#page-1-right {
+    padding-left: 150px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#right-image img {
+    padding-top: 5px;
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+   
+}
+
+#paragrph {
+    display: flex;
+    /*flex-direction: column;*/
+    gap: 100px;
+    /*justify-content: space-between ;*/
+}
+
+#paragraph-1 {
+    font-family: "arial";
+    font-weight:550;
+    line-height: 1.5;
+    
+}
+
+#paragraph-2 {
+    font-family: Arial ;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 14px;
+    color: black;
+}
+#page-2 {
+    display: flex;
+   padding: 50px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+    justify-content:left;
+    gap: 40px;
+    padding-top: 100px;
+    padding-left: 180px;
+}
+#page-2-left img {
+    width: 300px;
+    height: auto;
+}
+#page-2-left p {
+    font-family: Arial ;
+    font-weight: 700;
+    padding-top: 90px;
+}
+#page-2-right img {
+    padding-left: 200px;
+    width: 800px;
+    height: auto;
+    padding-bottom: 20px;
+}
+#page-3 {
+    display: flex;
+   padding: 50px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+    /*justify-content:left;*/
+    gap: 40px;
+    padding-top: 40px;
+    padding-left: 120px;
+}
+#page-2-middle img {
+    width: 1290px;
+}
+#page-2-middle p {
+    text-align: center;
+    font-family: "monument extended";
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+}
